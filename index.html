@@ -1,135 +1,226 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Portfolio: Experiência de Curso</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio: Claudio Diniz Fulgencio</title>
+    
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
 
-<style>
-    body{
-        margin:0;
-        font-family: 'Segoe UI', sans-serif;
-        background:#e9c5fa;
-        color:#333;
-    }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: #e9c5fa;
+            color: #333;
+            min-height: 100vh;
+        }
 
-    header{
-        background:linear-gradient(120deg,#9a4fc2,#871dbf);
-        color:white;
-        padding:60px 20px;
-        text-align:center;
-    }
+        header {
+            background: linear-gradient(120deg, #9a4fc2, #871dbf);
+            color: white;
+            padding: 64px 20px;
+            text-align: center;
+        }
 
-    header h1{
-        margin:0;
-        font-size:42px;
-    }
+        header h1 {
+            margin-bottom: 12px;
+            font-size: 42px;
+            font-weight: 600;
+        }
 
-    header p{
-        font-size:20px;
-        opacity:0.9;
-    }
+        header p {
+            font-size: 20px;
+            opacity: 0.9;
+        }
 
-    section{
-        padding:50px 20px;
-        max-width:1000px;
-        margin:auto;
-    }
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 48px 20px;
+        }
 
-    h2{
-        text-align:center;
-        margin-bottom:30px;
-        color:#ac1bfa;
-    }
+        section {
+            background: white;
+            border-radius: 12px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+            padding: 32px;
+            margin-bottom: 32px;
+        }
 
-    .cards{
-        display:flex;
-        flex-wrap:wrap;
-        gap:20px;
-        justify-content:center;
-    }
+        section h2 {
+            color: #ac1bfa;
+            font-size: 32px;
+            text-align: center;
+            margin-bottom: 24px;
+        }
 
-    .card{
-        background:rgba(218,150,255, 0.1);
-        padding:25px;
-        width:280px;
-        border-radius:12px;
-        box-shadow:0 8px 20px rgba(0,0,0,0.08);
-        transition:0.3s;
-    }
+        .content-wrapper {
+            max-width: 900px;
+            margin: 0 auto;
+        }
 
-    .card:hover{
-        transform:translateY(-6px);
-    }
+        .space-y-4 > * + * {
+            margin-top: 16px;
+        }
 
-    .btn{
-        display:inline-block;
-        margin-top:15px;
-        padding:10px 18px;
-        background:#8a02f2;
-        color:white;
-        border-radius:20px;
-        text-decoration:none;
-        font-size:14px;
-    }
+        .space-y-6 > * + * {
+            margin-top: 24px;
+        }
 
-    footer{
-        background:#9a4fc2;
-        color:white;
-        text-align:center;
-        padding:20px;
-        margin-top:40px;
-    }
-</style>
+        .space-y-3 > * + * {
+            margin-top: 12px;
+        }
+
+        p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #333;
+        }
+
+        .bio-item {
+            padding-bottom: 16px;
+            border-bottom: 1px solid #e5e7eb;
+        }
+
+        .bio-item:last-child {
+            border-bottom: none;
+        }
+
+        .bio-item h3 {
+            color: #871dbf;
+            font-size: 20px;
+            margin-bottom: 12px;
+        }
+
+        .skills-grid {
+            display: grid;
+            grid-template-columns: 1fr;
+            gap: 24px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        @media (min-width: 768px) {
+            .skills-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        .skill-card {
+            padding: 20px;
+            border-radius: 12px;
+            background: rgba(218, 150, 255, 0.1);
+        }
+
+        .skill-card h3 {
+            color: #871dbf;
+            font-size: 18px;
+            margin-bottom: 8px;
+        }
+
+        .skill-card p {
+            font-size: 14px;
+            color: #555;
+            line-height: 1.6;
+        }
+
+        .text-center {
+            text-align: center;
+        }
+
+        footer {
+            background: #9a4fc2;
+            color: white;
+            text-align: center;
+            padding: 24px 20px;
+            margin-top: 48px;
+        }
+
+        footer p {
+            font-size: 14px;
+            color: white;
+        }
+    </style>
 </head>
 
 <body>
+    <header>
+        <h1>꒰ 𝒞𝓁𝒶𝓊𝒹𝒾𝑜 𝒟𝒾𝓃𝒾𝓏 𝐹𝓊𝓁𝑔𝑒𝓃𝒸𝒾𝑜 ꒱</h1>
+        <p>Desenvolvedor Junior ⧽ Aluno de Desenvolvimento de Sistemas ⧽ Trabalho Back-end</p>
+    </header>
 
-<header>
-    <h1>꒰ 𝒞𝓁𝒶𝓊𝒹𝒾𝑜 𝒟𝒾𝓃𝒾𝓏 𝐹𝓊𝓁𝑔𝑒𝓃𝒸𝒾𝑜 ꒱</h1>
-    <p>Desenvolvedor Junior ⧽ Aluno de Desenvolvimento de Sistemas ⧽ Trabalho Back-end</p>
-</header>
+        <section>
+            <h2>Biografia & Experiência</h2>
+            <div class="content-wrapper space-y-6">
+                <div class="bio-item">
+                    <h3>Curso</h3>
+                    <p>
+                        Atualmente cursando Desenvolvimento de Sistemas no Colégio Estadual Parigot de Souza, 
+                        onde tenho a oportunidade de aprender sobre tecnologias modernas e práticas de desenvolvimento 
+                        de software.
+                    </p>
+                </div>
 
-<section>
-    <h2>Ainda estou aprendendo!</h2>
-    <p style="text-align:center; max-width:700px; margin:auto;">
-    ⤷ Sou aluno do curso de Desenvolvimento de Sistemas, aprendo programação FRONT-end e BACK-end
-        
-     ۶ৎ Adoro explorar novas oportunidades e aprender mais sobre programação!!
-        
-     ۶ৎ Estudo no Colegio Estadual Parigot de Souza
-    </p>
-</section>
+                <div class="bio-item">
+                    <h3>Habilidades Técnicas</h3>
+                    <p>
+                        Conhecimento em desenvolvimento Front-end e Back-end.
+                    </p>
+                </div>
 
-<section>
-    <h2>Projetos</h2>
-    <div class="cards">
-        <div class="card">
-            <h3>Projeto 1</h3>
-            <p>O portfolio que esta vendo agora!</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
+                <div class="bio-item">
+                    <h3>Biografia</h3>
+                    <p>
+                       ⤷ Sou aluno do curso de Desenvolvimento de Sistemas, aprendo programação FRONT-end e BACK-end 
+                        ۶ৎ Adoro explorar novas oportunidades e aprender mais sobre programação!! 
+                        ۶ৎ Tenho 16 anos
+                    </p>
+                </div>
+            </div>
+        </section>
 
-        <div class="card">
-            <h3>Projeto 2</h3>
-            <p>Alteração e aprendizado no VS-code</p>
-            <a href="#" class="btn">Ver projeto</a>
-        </div>
+        <section>
+            <h2>Progresso de Desenvolvimento do Curso</h2>
+            <div class="skills-grid">
+                <div class="skill-card">
+                    <h3>Front-end</h3>
+                    <p>HTML, CSS, JavaScript</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Back-end</h3>
+                    <p>Lógica de Programação, Estruturas de Dados!</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Ferramentas</h3>
+                    <p>VS Code, Github.com</p>
+                </div>
+
+                <div class="skill-card">
+                    <h3>Soft Skills</h3>
+                    <p>Trabalho em Equipe, Resolução de Problemas, Aprendizado Contínuo</p>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contato Section -->
+        <section>
+            <h2>⊹ ࣪ ˖ Contato ☎</h2>
+            <div class="content-wrapper space-y-3 text-center">
+                <p>📞 (44) 999107929</p>
+                <p>📧 claudio.fulgencio@escola.pr.gov.br</p>
+                <p>💻 GitHub: claudiofulgencio-cell</p>
+            </div>
+        </section>
     </div>
-</section>
 
-<section>
-    <h2>⊹ ࣪ ˖ (44)999107929 ☎</h2>
-    <p style="text-align:center;">
-        📧 claudio.fulgencio@escola.pr.gov.br<br>
-        💼 LinkedIn: seu perfil<br>
-        💻 GitHub: claudiofulgencio-cell
-    </p>
-</section>
-
-<footer>
-    <p>© 2026 - Claudio Fulgencio ᛝ Portfolio de Aluno, projeto de Fevereiro-Março ᛝ 😋</p>
-</footer>
-
+    <footer>
+        <p>© 2026 - Claudio Fulgencio ᛝ Portfolio de Aluno, projeto de Fevereiro-Março ᛝ 😋</p>
+    </footer>
 </body>
 </html>
